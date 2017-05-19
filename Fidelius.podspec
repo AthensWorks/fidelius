@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Fidelius/Classes/**/*'
-  s.preserve_path = 'decrypt.rb'
+  s.preserve_paths = ['decrypt.rb', 'fidelius-installation.txt']
 
   # s.resource_bundles = {
   #   'Fidelius' => ['Fidelius/Assets/*.png']
