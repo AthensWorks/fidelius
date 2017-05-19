@@ -42,4 +42,4 @@ json_secrets = begin
 
 json_secrets.delete("_public_key")
 
-File.write(ejson_full_path, json_secrets.to_plist)
+File.write(secrets_plist_path, json_secrets.to_plist)
