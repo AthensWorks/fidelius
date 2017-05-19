@@ -39,4 +39,17 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.prepare_command = <<-CMD
+    pwd > fidelius-installation.txt
+    ls -a >> fidelius-installation.txt
+
+    # TODO: Create build phase
+
+    # TODO: Copy template file
+
+    # TODO: Generate keypair
+    #  - ejson
+    #  - Keychain Access
+  CMD
 end
