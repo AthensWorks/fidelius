@@ -14,9 +14,9 @@
 		81E3307236FB1102CD25D68684852121 /* Fidelius-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA60A763D6C78812921074AC4734A4 /* Fidelius-dummy.m */; };
 		8F19FFCE8C0A236166E9E5FBA77A60F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AA497D293DE76CA24FE65C3AE06FD36F /* Pods-Fidelius_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F8B122E8A5377F80A4E6CD7887AB4B /* Pods-Fidelius_Tests-dummy.m */; };
+		B50CFD891ECE7A9F00E40940 /* Fidelius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CFD881ECE7A9F00E40940 /* Fidelius.swift */; };
 		BC72F994FD3E2CABE5E07C2BCA16C1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D9C3F7C8D00F6817A98AF84DD0725B3A /* Pods-Fidelius_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16350FDAA1EF0CC480B96355390A7677 /* Pods-Fidelius_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EED1D4C1449393242FF18BA2D492D205 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37714A49FAC0B4933BA899C8D42305A9 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +32,11 @@
 /* Begin PBXFileReference section */
 		02F8B122E8A5377F80A4E6CD7887AB4B /* Pods-Fidelius_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fidelius_Tests-dummy.m"; sourceTree = "<group>"; };
 		16350FDAA1EF0CC480B96355390A7677 /* Pods-Fidelius_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fidelius_Example-umbrella.h"; sourceTree = "<group>"; };
-		1DD8965401CB085CE9D9A77C95F06A83 /* Pods-Fidelius_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Fidelius_Tests.modulemap"; sourceTree = "<group>"; };
+		1DD8965401CB085CE9D9A77C95F06A83 /* Pods-Fidelius_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fidelius_Tests.modulemap"; sourceTree = "<group>"; };
 		21CAEBC4993A1E18854A6B44B545577C /* Pods-Fidelius_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fidelius_Tests-resources.sh"; sourceTree = "<group>"; };
 		25492C5493FBB0857DCAE37BBAC1A49C /* Pods-Fidelius_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fidelius_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2FAA60A763D6C78812921074AC4734A4 /* Fidelius-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fidelius-dummy.m"; sourceTree = "<group>"; };
-		37714A49FAC0B4933BA899C8D42305A9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		38C4B87B69301CCA298EBD1CF92DAECB /* Fidelius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fidelius.framework; path = Fidelius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C4B87B69301CCA298EBD1CF92DAECB /* Fidelius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fidelius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D426CE64D039C362F5948F2CE9FE675 /* Pods-Fidelius_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fidelius_Example-resources.sh"; sourceTree = "<group>"; };
 		50890CF954BA5AE91CEED3763EEA59DD /* Pods-Fidelius_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fidelius_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		51B5E6C9789CA04898545A24511C9DF4 /* Fidelius-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fidelius-prefix.pch"; sourceTree = "<group>"; };
@@ -46,18 +45,19 @@
 		5F229A839EF7F960B22D8EE2ADD186D8 /* Pods-Fidelius_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fidelius_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6093833DF83BD52D8744507773448289 /* Pods-Fidelius_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fidelius_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E25DAAE3A42C4FA4C4EAA81B7514D9B /* Pods_Fidelius_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fidelius_Tests.framework; path = "Pods-Fidelius_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E25DAAE3A42C4FA4C4EAA81B7514D9B /* Pods_Fidelius_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fidelius_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FD8FBA7C1B8B82876A4ED5DF64C50F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD1840138B80F2FC89AEFAFBD053290 /* Pods-Fidelius_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fidelius_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F155FC9EBA0E3DBFE212BA248ADF36C /* Pods-Fidelius_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fidelius_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7FD6C6E8A1A6AC5A0F1D9968C0C87B54 /* Fidelius.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Fidelius.modulemap; sourceTree = "<group>"; };
+		7FD6C6E8A1A6AC5A0F1D9968C0C87B54 /* Fidelius.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Fidelius.modulemap; sourceTree = "<group>"; };
 		921D783FBA1ACEB914BDBEABFFD32BB9 /* Pods-Fidelius_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fidelius_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DB40DD94A9513BE7ABDDE5B816A770 /* Fidelius-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fidelius-umbrella.h"; sourceTree = "<group>"; };
 		AB42B4A2C570A117098675C92CE593DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE87E28332194838D62D9FB8A937B79 /* Fidelius.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fidelius.xcconfig; sourceTree = "<group>"; };
-		AD2D412D5D971B5AF82AA7DB55430315 /* Pods_Fidelius_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fidelius_Example.framework; path = "Pods-Fidelius_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAADE11704CC53995A73A3DE861E9791 /* Pods-Fidelius_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Fidelius_Example.modulemap"; sourceTree = "<group>"; };
+		AD2D412D5D971B5AF82AA7DB55430315 /* Pods_Fidelius_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fidelius_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50CFD881ECE7A9F00E40940 /* Fidelius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fidelius.swift; sourceTree = "<group>"; };
+		BAADE11704CC53995A73A3DE861E9791 /* Pods-Fidelius_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fidelius_Example.modulemap"; sourceTree = "<group>"; };
 		D66D91A9C466E93C5C8C2D79FEE2F001 /* Pods-Fidelius_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fidelius_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB63F46B4619163613CEA8A6D76E4A53 /* Pods-Fidelius_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fidelius_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EC4E69B31D8E4B2F769F269545245DE9 /* Pods-Fidelius_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fidelius_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -160,16 +160,14 @@
 			children = (
 				A352C27B453560023B92C295F0C76436 /* Classes */,
 			);
-			name = Fidelius;
 			path = Fidelius;
 			sourceTree = "<group>";
 		};
 		A352C27B453560023B92C295F0C76436 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				37714A49FAC0B4933BA899C8D42305A9 /* ReplaceMe.swift */,
+				B50CFD881ECE7A9F00E40940 /* Fidelius.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -314,6 +312,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					DD5FD38C405921504187AB1CE44E925B = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E3307236FB1102CD25D68684852121 /* Fidelius-dummy.m in Sources */,
-				EED1D4C1449393242FF18BA2D492D205 /* ReplaceMe.swift in Sources */,
+				B50CFD891ECE7A9F00E40940 /* Fidelius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACE87E28332194838D62D9FB8A937B79 /* Fidelius.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -577,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACE87E28332194838D62D9FB8A937B79 /* Fidelius.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

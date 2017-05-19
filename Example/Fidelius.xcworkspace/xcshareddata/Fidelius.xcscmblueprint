@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "13DD312F4C5DC3080F076DB5BBABF4EF42F1D633",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8B11776EE2FCD8E22ABC563F110876345792F99E" : 9223372036854775807,
+    "13DD312F4C5DC3080F076DB5BBABF4EF42F1D633" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6EF1B7F5-3B26-4E95-9867-9B26FAB6E75C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8B11776EE2FCD8E22ABC563F110876345792F99E" : "Fidelius\/",
+    "13DD312F4C5DC3080F076DB5BBABF4EF42F1D633" : "fidelius\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:AthensWorks\/fidelius",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13DD312F4C5DC3080F076DB5BBABF4EF42F1D633"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:AthensWorks\/fidelius",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B11776EE2FCD8E22ABC563F110876345792F99E"
+    }
+  ]
+}
