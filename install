@@ -1,7 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 gem install --user-install ejson
 gem install --user-install plist
 
+export PATH=$PATH:/Users/ben/.gem/ruby/2.0.0/bin
+
 echo $PWD
-cp -n Pods/Fidelius/secrets.ejson ./
+
+mkdir -m 700 ~/.ejson_keys
+
+if [ ! -e 'secrets.ejson' ] ; then
+  KEY=`ejson -keydir ~/.ejson_keys keygen -w`
+  JSON="{\n\"_public_key\":\"$KEY\"\n}"
+
+  echo "Generated key: $KEY"
+  echo $JSON > secrets.ejson
+fi
+
+#cp -n Pods/Fidelius/secrets.ejson ./
