@@ -1,9 +1,9 @@
 {
   "name": "Fidelius",
   "version": "0.1.0",
-  "summary": "A short description of Fidelius.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/benlachman/Fidelius",
+  "summary": "Use secrets.ejson (and decrypt) for the securest of apps",
+  "description": "Place a secrets.ejson file into your project directory and your keys in ~/.ejson_keys and then you're off to the races.",
+  "homepage": "https://github.com/AthensWorks/fidelius",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "benlachman": "blachman@mac.com"
   },
   "source": {
-    "git": "https://github.com/benlachman/Fidelius.git",
+    "git": "https://github.com/AthensWorks/fidelius.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Fidelius/Classes/**/*"
+  "source_files": "Fidelius/Classes/**/*",
+  "preserve_paths": "decrypt.rb"
 }

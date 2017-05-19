@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Fidelius {
+public class Fidelius {
     enum FideliusError: Error {
         case NotFound
     }
     
-    class func secrets() -> Dictionary<String, Any?> {
+    public class func secrets() -> Dictionary<String, Any?> {
         if let path = Bundle.main.path(forResource: "Fidelius", ofType: "plist") {
             if let dict = NSDictionary(contentsOfFile: path) as? Dictionary<String, AnyObject> {
                 return dict

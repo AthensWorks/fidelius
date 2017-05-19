@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24040C84D1D087D784E585F4 /* Fidelius.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Fidelius.podspec; path = ../Fidelius.podspec; sourceTree = "<group>"; };
+		24040C84D1D087D784E585F4 /* Fidelius.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Fidelius.podspec; path = ../Fidelius.podspec; sourceTree = "<group>"; };
 		397D74CFA19E4B770A004DF6 /* Pods_Fidelius_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fidelius_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D2854B266A51051299A1F74 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4D2854B266A51051299A1F74 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		504BED92040CFEBC364EBA6D /* Pods-Fidelius_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidelius_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidelius_Tests/Pods-Fidelius_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Fidelius_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fidelius_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69E0F8C31FBF62638CF8ED07 /* Pods-Fidelius_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidelius_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidelius_Tests/Pods-Fidelius_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D8071B018664DF15C27DCC8 /* Pods-Fidelius_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidelius_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidelius_Example/Pods-Fidelius_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		991131CE5A1A911B66C69F32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		991131CE5A1A911B66C69F32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A53EA4E5FA81272BF1D26B3D /* Pods-Fidelius_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidelius_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidelius_Example/Pods-Fidelius_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EF97C68F92094B17BEB0374B /* Pods_Fidelius_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fidelius_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +172,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3114A8872C52E14840D93BFB /* [CP] Embed Pods Frameworks */,
 				620DB5479A8736BDEDAE6A64 /* [CP] Copy Pods Resources */,
+				B50CFD8E1ECEBBAC00E40940 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -338,6 +339,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fidelius_Example/Pods-Fidelius_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B50CFD8E1ECEBBAC00E40940 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export EJSON_KEYS_PATH=\"${SRCROOT}\"/example_key/\nexport EJSON_SECRETS_FILE=\"${SRCROOT}\"/secrets.ejson\n\n${PODS_ROOT}/Fidelius/decrypt.rb\n";
 		};
 		E0C7E88E6FCD1DEFBF191893 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

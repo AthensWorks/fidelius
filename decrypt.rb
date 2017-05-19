@@ -22,7 +22,7 @@ ejson_full_path = File.exist?(ejson_path) && File.absolute_path(ejson_path)
 
 built_products_dir = ENV.fetch("BUILT_PRODUCTS_DIR")
 app_product = "#{ENV.fetch("PRODUCT_NAME")}.app"
-secrets_plist = "Secrets.plist"
+secrets_plist = "Fidelius.plist"
 secrets_plist_path = [built_products_dir, app_product, secrets_plist].join("/")
 
 error("#{ejson_full_path} does not exist") unless ejson_full_path
@@ -42,4 +42,5 @@ json_secrets = begin
 
 json_secrets.delete("_public_key")
 
+log("Writing secrets to #{secrets_plist_path}")
 File.write(secrets_plist_path, json_secrets.to_plist)
