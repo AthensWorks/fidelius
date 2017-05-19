@@ -1,11 +1,10 @@
 use_frameworks!
 
 target 'Fidelius_Example' do
-  pod 'Fidelius', :path => '../'
+  pod 'Fidelius', :git => "https://github.com/AthensWorks/fidelius.git", branch: => "download-pod"
 
   target 'Fidelius_Tests' do
     inherit! :search_paths
 
-    
   end
 end
