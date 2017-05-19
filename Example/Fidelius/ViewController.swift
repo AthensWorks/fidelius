@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Fidelius
 
 class ViewController: UIViewController {
+    @IBOutlet weak var secretValueLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        secretValueLabel.text = Fidelius.secrets()["test_key"] as? String
     }
 
     override func didReceiveMemoryWarning() {
