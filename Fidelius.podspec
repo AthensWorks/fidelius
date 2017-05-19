@@ -44,9 +44,9 @@ TODO: Add long description of the pod here.
   s.prepare_command = <<-CMD
     echo "PREPARATION DIRECTORY" > fidelius-installation.txt
     pwd >> fidelius-installation.txt
-    echo "\\nDIRECTORIES & FILES" >> fidelius-installation.txt
+    echo "\nDIRECTORIES & FILES" >> fidelius-installation.txt
     ls -a >> fidelius-installation.txt
-    echo "\\nENVIRONMENT" >> fidelius-installation.txt
+    echo "\nENVIRONMENT" >> fidelius-installation.txt
     env >> fidelius-installation.txt
 
     # TODO: Create build phase
