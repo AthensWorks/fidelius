@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gem install --user-install ejson
+gem install --user-install plist
+
+echo $PWD
+cp -n Pods/Fidelius/secrets.ejson ./

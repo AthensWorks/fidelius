@@ -31,7 +31,11 @@ Place a secrets.ejson file into your project directory and your keys in ~/.ejson
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Fidelius/Classes/**/*'
-  s.preserve_paths = "decrypt.rb"
+  s.preserve_paths = [
+    "decrypt.rb",
+    "secrets.ejson",
+    "install"
+  ]
   # s.resource = "Fidelius/*.rb"
   # s.resource_bundles = {
   #   'Fidelius' => ['Fidelius/*.rb']
