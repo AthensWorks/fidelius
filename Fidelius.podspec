@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Fidelius'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Fidelius.'
+  s.summary          = 'Use secrets.ejson (and decrypt) for the securest of apps'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,22 +18,23 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Place a secrets.ejson file into your project directory and your keys in ~/.ejson_keys and then you're off to the races.
                        DESC
 
-  s.homepage         = 'https://github.com/benlachman/Fidelius'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/AthensWorks/fidelius'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'benlachman' => 'blachman@mac.com' }
-  s.source           = { :git => 'https://github.com/benlachman/Fidelius.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AthensWorks/fidelius.git', :tag => s.version.to_s }
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Fidelius/Classes/**/*'
-  
+  s.preserve_path = "decrypt.rb"
+  # s.resource = "Fidelius/*.rb"
   # s.resource_bundles = {
-  #   'Fidelius' => ['Fidelius/Assets/*.png']
+  #   'Fidelius' => ['Fidelius/*.rb']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
