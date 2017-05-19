@@ -1,0 +1,16 @@
+PODS:
+  - Fidelius (0.1.0)
+
+DEPENDENCIES:
+  - Fidelius (from `../`)
+
+EXTERNAL SOURCES:
+  Fidelius:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Fidelius: 5c858d813dba3cd793a084329e88c9350367013b
+
+PODFILE CHECKSUM: 15590a6a57a8a3cb75392c8974aca1ee6c2b1b87
+
+COCOAPODS: 1.2.1

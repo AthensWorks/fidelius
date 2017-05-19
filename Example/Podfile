@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Fidelius_Example' do
+  pod 'Fidelius', :path => '../'
+
+  target 'Fidelius_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

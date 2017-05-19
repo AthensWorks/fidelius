@@ -1,0 +1,22 @@
+{
+  "name": "Fidelius",
+  "version": "0.1.0",
+  "summary": "A short description of Fidelius.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/benlachman/Fidelius",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "benlachman": "blachman@mac.com"
+  },
+  "source": {
+    "git": "https://github.com/benlachman/Fidelius.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Fidelius/Classes/**/*"
+}

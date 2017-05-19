@@ -1,0 +1,6 @@
+framework module Pods_Fidelius_Example {
+  umbrella header "Pods-Fidelius_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

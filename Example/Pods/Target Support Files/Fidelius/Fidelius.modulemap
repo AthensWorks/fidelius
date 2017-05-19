@@ -1,0 +1,6 @@
+framework module Fidelius {
+  umbrella header "Fidelius-umbrella.h"
+
+  export *
+  module * { export * }
+}
